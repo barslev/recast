@@ -651,8 +651,8 @@ function genericPrintNoParens(path: any, options: any, print: any) {
           parts.push(" ", argLines);
         }
       }
-
-      parts.push(";");
+      if (options.semicolonAtReturns)
+        parts.push(";");
 
       return concat(parts);
     }
