@@ -30,7 +30,7 @@
     "format": "prettier --write '{lib,test}/**.ts' '*rc.js'",
     "clean": "ts-emit-clean",
     "prepack": "npm run build",
-    "postinstall": "npm run build",
+    "postinstall": "tsc",
     "postpack": "npm run clean"
   },
   "lint-staged": {
