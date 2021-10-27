@@ -226,5 +226,6 @@ export function normalize(opts?: Options): NormalizedOptions {
     arrowParensAlways: get("arrowParensAlways"),
     flowObjectCommas: get("flowObjectCommas"),
     tokens: !!get("tokens"),
+    semicolonAtReturns: !!get("semicolonAtReturns"),
   };
 }
