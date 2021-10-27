@@ -449,6 +449,7 @@ FPp.needsParens = function (assumeExpressionContext) {
     case "ConditionalExpression":
       switch (parent.type) {
         case "UnaryExpression":
+          return false;
         case "SpreadElement":
         case "SpreadProperty":
         case "BinaryExpression":
