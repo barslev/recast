@@ -157,6 +157,12 @@ export interface Options extends DeprecatedOptions {
    * @default true
    */
   tokens?: boolean;
+
+  /**
+   * Whether to add semicolon at return statements
+   * @default true
+   */
+  semicolonAtReturns?: boolean
 }
 
 interface DeprecatedOptions {
@@ -184,6 +190,7 @@ const defaults: Options = {
   arrowParensAlways: false,
   flowObjectCommas: true,
   tokens: true,
+  semicolonAtReturns: true
 };
 const hasOwn = defaults.hasOwnProperty;
 
